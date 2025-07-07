@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 export default function Nav() {
     const [openIndex, setOpenIndex] = useState(null);
     const dropdownRefs = useRef([]);
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(true);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const toggleDropdown = (index) => {
         if (openIndex === index) {
