@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 export default function Nav() {
     const [openIndex, setOpenIndex] = useState(null);
     const dropdownRefs = useRef([]);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(true);
 
     const toggleDropdown = (index) => {
         if (openIndex === index) {
@@ -30,6 +31,10 @@ export default function Nav() {
             setOpenIndex(index);
         }
     };
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen((prev) => !prev);
+    }
 
     useEffect(() => {
         if (openIndex !== null && dropdownRefs.current[openIndex]) {
@@ -72,7 +77,15 @@ export default function Nav() {
 
     return (
         <nav className={styles["nav-container"]}>
-            <ul className={styles["nav-menu"]}>
+            <div className={styles["store-logo"]}>VNTG</div>
+
+            <div className={styles["mobile-menu-toggle"]} onClick={toggleMobileMenu}>
+                Menu
+            </div>
+
+            <ul className={
+                `${styles["nav-menu"]} ${isMobileMenuOpen ? styles["open"] : ""}`
+            }>
                 {menuItems.map((item, index) => (
                     <li key={item.title} className={styles["menu-item"]}>
                         <div

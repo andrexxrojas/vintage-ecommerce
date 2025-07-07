@@ -4,3 +4,10 @@
     display: flex;
     flex-direction: row;
 }
+
+@media (max-width: 768px) {
+    .page-layout {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
