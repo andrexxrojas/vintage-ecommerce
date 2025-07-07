@@ -72,9 +72,6 @@ export default function Nav() {
 
     return (
         <nav className={styles["nav-container"]}>
-            <div className={styles["nav-logo"]}>
-                <h1>VNTG</h1>
-            </div>
             <ul className={styles["nav-menu"]}>
                 {menuItems.map((item, index) => (
                     <li key={item.title} className={styles["menu-item"]}>

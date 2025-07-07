@@ -22,3 +22,8 @@
     font-family: "Geist SemiBold";
     src: url("src/fonts/Geist-SemiBold.otf");
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}

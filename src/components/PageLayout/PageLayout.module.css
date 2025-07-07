@@ -1,0 +1,6 @@
+.page-layout {
+    box-sizing: border-box;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+}
