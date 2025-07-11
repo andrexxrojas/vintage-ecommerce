@@ -9,3 +9,6 @@ client/build/
 # VSCode or OS
 .DS_Store
 .vscode/
+node_modules
+dist
+.cache

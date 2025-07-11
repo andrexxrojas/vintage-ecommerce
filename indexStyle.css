@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Geist Black";
+    src: url("src/fonts/Geist-Black.otf");
+}
+
+@font-face {
+    font-family: "Geist Bold";
+    src: url("src/fonts/Geist-Bold.otf");
+}
+
+@font-face {
+    font-family: "Geist Medium";
+    src: url("src/fonts/Geist-Medium.otf");
+}
+
+@font-face {
+    font-family: "Geist Regular";
+    src: url("src/fonts/Geist-Regular.otf");
+}
+
+@font-face {
+    font-family: "Geist SemiBold";
+    src: url("src/fonts/Geist-SemiBold.otf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
